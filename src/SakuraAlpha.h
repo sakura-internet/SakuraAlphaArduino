@@ -45,15 +45,15 @@
 class SakuraAlpha {
 protected:
 
-    virtual void begin();
-    virtual void end();
+    virtual void begin(){}
+    virtual void end(){}
 
-    virtual void sendByte(uint8_t data);
-    virtual void finishSending();
+    virtual void sendByte(uint8_t data){}
+    virtual void finishSending(){}
 
-    virtual void startReceiving(uint16_t num_recieve);
-    virtual uint8_t receiveByte();
-    virtual void finishReceiving();
+    virtual void startReceiving(uint16_t num_recieve){}
+    virtual uint8_t receiveByte(){}
+    virtual void finishReceiving(){}
 
 public:
 
