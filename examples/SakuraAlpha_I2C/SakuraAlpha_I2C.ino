@@ -23,7 +23,7 @@ void loop() {
   int num_updated = sakura.getUpdatedChannels(updated, BUF_LEN);
   Serial.print(num_updated);
   Serial.print(" updated channels: ");
-  for (int i = 0; i < num_updated; i++) {
+  for (int i = 0; i < min(num_updated,BUF_LEN); i++) {
     Serial.print(' ');
     Serial.print((int)updated[i]);
   }
@@ -54,7 +54,7 @@ void loop() {
   num_updated = sakura.getUntransmittedChannels(updated, BUF_LEN);
   Serial.print(num_updated);
   Serial.print(" untransmitted channels: ");
-  for (int i = 0; i < num_updated; i++) {
+  for (int i = 0; i < min(num_updated,BUF_LEN); i++) {
     Serial.print(' ');
     Serial.print((int)updated[i]);
   }
