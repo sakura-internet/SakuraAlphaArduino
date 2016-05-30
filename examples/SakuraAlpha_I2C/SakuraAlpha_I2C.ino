@@ -8,6 +8,12 @@ SakuraAlphaI2C sakura;
 
 void setup() {
   Serial.begin(9600);  // start serial for output
+  
+  Serial.println("Waiting to come online...");
+  for(;;){
+    if( sakura.getNetworkStatus() == 1 ) break;
+    delay(1000);
+  }
 }
 
 uint8_t updated[BUF_LEN];
