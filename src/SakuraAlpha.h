@@ -5,7 +5,7 @@
 #include <Wire.h>
 #include <SPI.h>
 
-#define SAKURACC_SLAVE_ADDR 0x04
+#define SAKURACC_SLAVE_ADDR 0x4F
 
 #define CMD_NETWORKSTATUS  0x01
 
