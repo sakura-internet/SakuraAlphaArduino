@@ -252,7 +252,7 @@ public:
         startReceiving(len+1);
         num = receiveByte();
 
-        for( int i=0; i<num; i++){
+        for( int i=0; i<min(num,len); i++){
             buff[i]=receiveByte();
         }
 
@@ -274,7 +274,7 @@ public:
         startReceiving(len+1);
         num = receiveByte();
 
-        for( int i=0; i<num; i++){
+        for( int i=0; i<min(num,len); i++){
             buff[i]=receiveByte();
         }
 
