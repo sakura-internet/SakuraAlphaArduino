@@ -2,6 +2,9 @@
 
 **Under development**
 
+**This is for only Alpha module. If you use a `Sakura Communication Module β (SCM-LTE-Beta)` then use [SakuraIOArduino](https://github.com/sakura-internet/SakuraIOArduino)**
+
+
 # License
 The MIT License (MIT)
 
